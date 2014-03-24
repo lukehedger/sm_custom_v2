@@ -1,0 +1,722 @@
+/*
+Theme Name: Spicer And Moore Custom Theme
+Theme URI: http://inmosystems.com/
+Author: Inmo
+Version: 1
+License: Copyright Inmo Ltd 2011
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1.2;
+	font-size: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}	
+
+a img {
+	border: none;
+}
+
+.float_left {
+	float: left;
+}	
+.float_right {
+	float: right;
+}	
+.clear {
+	clear: both;
+}	
+
+
+
+/* =Structure & Layout
+-------------------------------------------------------------- */
+
+body {
+	background: #000;
+}
+#wrapper {
+	width: 984px;
+	padding: 0 20px;
+	margin: 0 auto;
+	background: #fff;
+}	
+
+
+/* Structure the header area */
+
+h1#blog_title a {
+    background-image: url("images/blog_title.png");
+    display: block;
+    height: 75px;
+    text-indent: -9999px;
+    width: 180px;
+    margin: 33px 0 29px 20px;
+}
+
+#share_widget {
+	background: #f3f0f0;
+	padding: 9px 6px 8px 12px;
+	width: 133px;
+	margin: 0 20px 25px 0;
+}
+#share_widget .title {
+	padding-bottom: 8px;
+}
+.stButton {
+	margin-left: 0 !important;
+	margin-right: 6px !important;
+}	
+.st_twitter .stButton,
+.stButton .twitter {
+	width: 11px !important;
+}
+.stButton .twitter {
+    background-image: url("images/share_t.png") !important;
+    padding: 0 !important;
+}
+.st_facebook .stButton,
+.stButton .facebook {
+	width: 8px !important;
+}
+.stButton .facebook {
+    background-image: url("images/share_fb.png") !important;
+    padding: 0 !important;
+}
+.st_digg .stButton,
+.stButton .digg {
+	width: 16px !important;
+}
+.stButton .digg {
+    background-image: url("images/share_digg.png") !important;
+    padding: 0 !important;
+}
+.st_stumbleupon .stButton,
+.stButton .stumbleupon {
+	width: 15px !important;
+}
+.stButton .stumbleupon {
+    background-image: url("images/share_stumble.png") !important;
+    padding: 0 !important;
+}
+.st_linkedin .stButton,
+.stButton .linkedin {
+	width: 15px !important;
+}
+.stButton .linkedin {
+    background-image: url("images/share_in.png") !important;
+    padding: 0 !important;
+}
+.st_google .stButton,
+.stButton .google {
+	width: 15px !important;
+}	
+.stButton .google {	
+    background-image: url("images/share_g.png") !important;
+    padding: 0 !important;
+}
+
+#tag_line {
+	height: 30px;	
+	margin: 0 20px 27px 0;
+}	
+
+#main_nav {	
+	background: #000;
+	padding: 6px 5px;
+	margin-bottom: 11px;
+}	
+.nav_left li {
+	float: left;
+	display: block;
+}
+.nav_right li {
+	float: right;
+	display: block;
+}
+#main_nav a {
+	display: block;
+	padding: 2px 5px;
+	margin: 0 4px;
+}
+#main_nav a:hover,
+.home .menu-item-home a,
+.current-menu-item a {
+	background: #ffdb04;
+}
+
+
+/* The main section structure */
+
+#content {	
+	width: 729px;
+	float: left;
+	margin-right: 4px;
+}	
+
+#slide {
+	width: 718px;
+	height: 375px;
+	background: #000;
+	margin: 0 11px 11px 0;
+	position: relative;
+	overflow: hidden;
+}
+.slide_panel {
+	width: 718px;
+	height: 375px;
+	float: left;
+	display: block;
+	position: relative;
+}	
+#slide_nav_left {
+	width: 28px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 130px;
+	z-index: 80;
+}		
+#slide_nav_right {
+	width: 28px;
+	height: 100px;
+	position: absolute;
+	left: 690px;
+	top: 130px;
+	z-index: 80;
+}
+#slide_nav_left img,
+#slide_nav_right img {
+	cursor: pointer;
+}
+.slide_panel h3 {
+	height: 24px;
+	overflow: hidden;
+	margin-left: 24px;
+	position: absolute;
+	left: 0;
+	top: 336px;
+	z-index: 60;
+}	
+ 
+.spcr {
+	width: 702px;
+	height: 11px;
+	background: #c8c6c5;
+	padding: 8px 8px 10px 8px;
+	margin: 0 11px 10px 0;
+}
+.spcr_slim {
+	width: 718px;
+	height: 20px;
+	background: #c8c6c5;
+	margin: 0 11px 19px 0;
+}
+.spcr .pagination {
+	float: right;
+}
+.spcr a {
+	background: #ffdb04;
+}
+.spcr a:hover,
+.spcr .current {
+	background: #000;
+}
+.spcr a.page-numbers,
+.spcr span.page-numbers {
+	padding: 0 3px;
+}
+.spcr a.prev {
+	padding: 0 3px 0 12px;
+	background-image: url("images/arrow_back.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.spcr a:hover.prev {
+	background-image: url("images/arrow_back_a.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.spcr a.next {
+	padding: 0 11px 0 3px;
+	background-image: url("images/arrow_fwd.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}	
+.spcr a:hover.next {
+	background-image: url("images/arrow_fwd_a.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}	
+
+#content h2 {
+	margin-right: 11px;
+}
+
+h2.page_title {
+	margin-bottom: 8px;
+}
+
+.teaser {
+	width: 232px;
+	float: left;
+	margin: 5px 11px 18px 0;
+}	
+.teaser a.teaser_img {
+	width: 232px;
+	height: 131px;
+	display: block;
+	margin-bottom: 6px;
+	background-color: #000;
+}
+.teaser a.teaser_img img:hover {
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+}		
+.teaser h3 {
+	height: 24px;
+	overflow: hidden;
+	margin-bottom: 4px;
+}
+.teaser .view_now {
+	margin-top: 14px;
+}
+.teaser .view_now a {
+	background: #ffdb04;
+	padding: 0 12px 0 5px;
+	background-image: url("images/arrow_fwd.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.teaser .view_now a:hover {
+	background: #000;
+	background-image: url("images/arrow_fwd_a.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#vid_embed {
+	width: 718px;
+	margin: 0 11px 10px 0;
+}
+
+#single_video h2 {
+	margin-bottom: 10px;
+}
+#vid_desc {
+	width: 400px;
+	float: left;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+#vid_desc p {
+	margin-bottom: 12px;
+}
+#vid_meta {
+	width: 232px;
+	float: right;
+	margin: 0 11px 21px 82px;
+}
+#vid_meta p {
+	margin-bottom: 6px;
+}
+
+h2.bold_ex {
+	margin-bottom: 11px;
+}
+#about_content {
+	margin-bottom: 11px;
+}	
+#about_content .col_1 {
+	width: 722px;
+	float: left;
+	margin-right: 14px;
+}	
+ #about_content .col_2 {
+ 	width: 352px;
+	float: right;
+	margin-right: 11px;
+}
+#about_content h1,
+#about_content h2,
+#about_content h3,
+#about_content h4,
+#about_content h5 {
+	padding-top: 7px;
+}		
+#about_content p,
+#contact_content p {
+	padding-bottom: 1em;
+}	
+
+#google_map {
+	margin-right: 11px;
+}	
+#google_map span {
+	float: right;
+	padding-top: 8px;
+}
+
+
+/* Structure the Sidebar */
+
+#primary_sidebar {	
+	width: 251px;
+	float: right;
+}	
+
+/* Twitter widget */
+.widget_twitter div {
+	background: #ffdb04;
+	padding: 2px 11px 4px 11px;
+	margin-bottom: 11px;
+	overflow: hidden;
+}
+.widget_twitter h1 {
+	display: none;
+}
+.widget_twitter li {
+	padding-bottom: 18px;
+}
+.widget_twitter span.entry-meta {
+	display: block;
+	padding-top: 2px;
+}
+
+/* Flickr widget */
+div.widget_flickr {
+	background: #000;
+	padding: 0 3px 5px 8px;
+	margin-bottom: 11px;
+}	 
+.slickr-flickr-gallery {
+	padding: 0 !important;
+}	
+.slickr-flickr-gallery ul li {
+	float: none !important;
+	margin: 0 !important;
+}
+.slickr-flickr-gallery ul img {
+    border: 0px solid #A9A9A9 !important;
+    margin: 0 !important;
+    padding: 0 5px 5px 0 !important;
+} 
+.slickr-flickr-gallery ul a:hover img {
+    background-color: #000 !important;
+    opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+/* Buttons */
+.sb_button a {
+	width: 211px;
+	height: 17px;
+	display: block;
+	padding: 20px;
+	margin-bottom: 11px;
+}
+.sb_button a:hover {
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.sb_button#tw a {
+	background-image: url("images/sb_button_tw.jpg");
+}
+.sb_button#fb a {
+	background-image: url("images/sb_button_fb.jpg");
+}
+.sb_button#flickr a {
+	background-image: url("images/sb_button_flickr.jpg");
+}
+
+
+/* Structure the footer area */
+
+#footer {
+	padding: 6px 0 45px 0;
+	border-top: 27px solid #000;
+	margin-top: 16px;
+}	
+
+
+
+/* =Typographic Styles
+-------------------------------------------------------------- */
+
+body,
+input,
+input[type=submit],
+textarea {
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-weight: normal;
+	color: #000000;
+}
+
+input[type=submit] {
+	color: #333;
+}
+
+a {
+	color: #000;
+}	
+
+#share_widget {
+	font-size: 12px;
+	color: #acaaaa;
+}
+#tag_line h2 {
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: 0.02em;
+	font-weight: 500;
+	color: #c8c6c5;
+}	
+#tag_line .alt {
+	color: #eae8e6;
+}	
+#main_nav a {
+	font-size: 15px;
+	letter-spacing: 0.03em;
+	font-weight: 300;
+	color: #fff;
+}
+#main_nav a:hover,
+.home #main_nav .menu-item-home a,
+#main_nav .current-menu-item a {
+	color: #000;
+}
+
+.slide_panel h3 a {
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+}	
+	
+.spcr {
+	font-size: 11px;
+	font-weight: 500;
+}
+.spcr .current {
+	color: #000;
+}
+.spcr a {
+	color: #000;
+}
+.spcr a:hover,
+.spcr .current {
+	color: #ffdb04;
+}
+
+h2.page_title {
+	font-size: 27px;  
+	font-weight: 600;
+	letter-spacing: 0.001em;
+}
+
+#single_video h2 {
+	font-size: 24px;  
+	font-weight: 600;
+	letter-spacing: 0.001em;
+}
+#vid_desc p {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.3;
+	color: #626262;
+}
+#vid_meta {
+	font-size: 14px;
+	letter-spacing: 0.01em; 
+	font-weight: 500; 
+}
+
+h2.bold_ex {
+	font-size: 26px;  
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	line-height: 1.1;
+}
+#about_content h1,
+#about_content h2,
+#about_content h3,
+#about_content h4,
+#about_content h5 {
+	font-size: 14px;
+	font-weight: 500;  
+	line-height: 1.3;
+	color: #626262;
+}	
+	
+#about_content p {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.3;
+	letter-spacing: 0.01em;
+	color: #626262;
+}	
+
+#google_map span {
+	font-weight: bold;
+}
+#contact_content p {
+	font-size: 14px;
+	font-weight: 500;  
+	line-height: 1.3;
+	letter-spacing: 0.01em;
+	color: #626262;
+}
+#contact_content a {
+	background-color: #ffdb04;
+}
+#contact_content a:hover {
+	color: #ffdb04;
+	background-color: #000;
+}
+
+.teaser h3 {
+	font-size: 18px;
+	font-weight: 600;
+}	
+.teaser p {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.3;
+	color: #626262;
+}	
+.teaser .view_now a {
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 1;
+	color: #000;
+}.teaser .view_now a:hover {
+	color: #ffdb04;
+}
+
+.widget_twitter div {
+	font-size: 13px;
+	letter-spacing: 0.005em;
+	font-weight: 500; 
+}
+.widget_twitter .entry-content a:hover {
+	text-decoration: underline;
+}	
+.widget_twitter .entry-meta a {
+	color: #a2a1a1;
+	font-weight: 400;
+	text-transform:uppercase;
+}	
+
+.sb_button a {
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+}	
+
+#footer {
+	font-size: 10px;
+	letter-spacing: 0.005em;
+	font-weight: 500; 
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	position: absolute;
+	left: -9000px;
+}
+ 
+ 
+ 
+/* =Images
+-------------------------------------------------------------- */
+
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 12px;
+}
+
+
+
+/* =Mobile Safari ( iPad, iPhone and iPod Touch )
+-------------------------------------------------------------- */
+
+body {
+	-webkit-text-size-adjust: 100%;
+}
