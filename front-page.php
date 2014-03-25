@@ -64,17 +64,16 @@ get_header(); ?>
 					<div class="inner">
 
 						<?php 
-							query_posts($query_string . '&posts_per_page=6');
+							query_posts($query_string . '&posts_per_page=9');
 							if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 						?>
 						
 						<div class="teaser">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser_img"><?php the_post_thumbnail('post-thumbnail', array('alt'=>'Project Preview','title'=>'View Now')); ?></a>
-							<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser_title"><?php the_title(); ?></a></h3>
-							<div class="stretch">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser_img">
+								<?php the_post_thumbnail('post-thumbnail', array('alt'=>'Project Preview','title'=>'View Now')); ?>
 								<p class="excerpt"><?php echo get_the_excerpt(); ?><br /></p>
-								<div class="view_now"><a href="<?php the_permalink(); ?>" title="View Project Details">View Now</a></div>
-							</div>				
+								<h3><?php the_title(); ?></h3>
+							</a>
 						</div>
 
 						<?php endwhile; else: ?>
@@ -96,7 +95,7 @@ get_header(); ?>
 								'next_text' => 'Next '
 							); 
 						?>
-						<span class="pagination"><?php echo paginate_links( $paginate_args );?></span>
+						<!-- <span class="pagination"><?php echo paginate_links( $paginate_args );?></span> -->
 
 					</div>
 				</div>
