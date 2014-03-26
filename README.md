@@ -6,7 +6,12 @@ Local Wordpress development
 ## TODO
 
 - Other pages:
-	- 
+	- About styles
+	- Contact styles
+	- Single styles
+ 	- Work - how to show all posts without Categories? + pagination styles
+ 	- Services page - create new + styles/content (clone from about)
+- S&M icons from PSD
 - Clients slideshow
 - Assets
 - Font

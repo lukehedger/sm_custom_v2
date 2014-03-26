@@ -8,17 +8,21 @@ get_header(); ?>
 		<div id="content">
 			
 			<h2 class="page_title"><?php the_title(); ?></h2>
-			<div class="spcr"></div>
-			<div id="vid_embed"><?php echo get_post_meta($post->ID, '_videoembed_manual', true); ?></div>
+
+			<!-- <div id="vid_embed"><?php echo get_post_meta($post->ID, '_videoembed_manual', true); ?></div> -->
+			
 			<?php while ( have_posts() ) : the_post(); ?>
 			
-			<h2 class="bold_ex">
-				<?php
-				$bold_ex = get_post_meta($post->ID, 'bold_ex', true);
-				if ( $bold_ex != '') {echo $bold_ex;}
-				?>
-			</h2>
-			<div class="spcr"></div>
+			<!-- restyle content here -->
+
+			<!-- <div class="row" id="about">
+				<div class="column twelve">
+					<div class="inner">
+						
+					</div>
+				</div>
+			</div> -->
+
 			<div id="about_content">		
 				<?php 
 				$about = get_the_content_with_formatting(); 
