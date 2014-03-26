@@ -9,7 +9,7 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  */
 
-get_header(); ?>
+	get_header(); ?>
 		
 		<div id="content">
 			
@@ -125,4 +125,4 @@ get_header(); ?>
 
 		</div><!-- #content -->
 
-		<?php get_footer(); ?>
+	<?php get_footer(); ?>
