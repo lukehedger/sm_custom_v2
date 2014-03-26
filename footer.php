@@ -9,10 +9,17 @@
 			<footer role="contentinfo" class="row">
 				<div class="column twelve">
 					<div class="inner">
-						Footer
+						<div class="social-icon twitter-icon"><a href="https://twitter.com/spicerandmoore" target="_blank"></a></div>
+						<div class="social-icon facebook-icon"><a href="https://facebook.com/spicerandmoore" target="_blank"></a></div>
+
+						<div class="contact">
+							<p>Spider &amp; Moose - 3rd Floor, 9 Chapel Place, London, UK, EC2A 3DQ</p>
+							<p><a href="mailto:info@spicerandmoore.com">info@spicerandmoore.com</a></p>
+							<p>+44 (0) 207 870 7414</p>
+						</div>
 
 						<div class="copyright">
-							Copyright &copy;
+							&copy; Copyright 2014 Spider and Moose - All Rights Reserved
 						</div>
 					</div>
 				</div>

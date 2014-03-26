@@ -124,7 +124,6 @@ nav a:hover, nav a:focus, nav a:active, nav a.active {
 	z-index: 60;
 	background: #bebdac;
 }
-
 .slide_panel h3 a {
 	font-size: 18px;
 	font-weight: 400;
@@ -150,20 +149,46 @@ nav a:hover, nav a:focus, nav a:active, nav a.active {
 .teaser:last-of-type {
 	margin-right: 0;
 }
-.teaser a.teaser_img {
+.teaser a.teaser-img {
+	height: 174px;
 	display: block;
 	position: relative;
 	background-color: black;
 }
-.teaser a.teaser_img img:hover {
-	opacity:0.7;
-	filter:alpha(opacity=70); /* For IE8 and earlier */
+.teaser a.teaser-img:hover {
+	text-decoration: none;
+}
+.teaser a.teaser-img:hover .teaser-overlay {
+	opacity: 0.8;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+.teaser a.teaser-img:hover .teaser-info {
+	display: block;
+}
+.teaser-overlay {
+	width: 100%;
+	height: 100%;
+	background: #bebdac;
+	position: absolute;
+	z-index: 10;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+}
+.teaser-info {
+	display: none;
 }
 .teaser h3 {
 	overflow: hidden;
 	font-size: 18px;
 	font-weight: 600;
 	color: white;
+	position: relative;
+	z-index: 20;
 }
 .teaser p {
 	padding: 0 60px;
@@ -173,6 +198,10 @@ nav a:hover, nav a:focus, nav a:active, nav a.active {
 	color: white;
 	position: absolute;
 	top: 30px;
+	z-index: 20;
+}
+.teaser img {
+	z-index: 0;
 }
 
 
@@ -180,30 +209,51 @@ nav a:hover, nav a:focus, nav a:active, nav a.active {
 	font-size: 18px;
 	text-align: center;
 }
+#sidebar li {
+	list-style-type: none;
+}
 /* Twitter widget */
 .widget_twitter div {
-	background: #ffdb04;
-	padding: 2px 11px 4px 11px;
 	margin-bottom: 11px;
+	font-size: 0.8em;
 	overflow: hidden;
 }
 .widget_twitter h1 {
 	display: none;
 }
+.widget_twitter ul {
+	margin: 20px 0;
+	padding: 0;
+}
 .widget_twitter li {
-	padding-bottom: 18px;
+	width: 33%;
+	padding: 0 20px;
+	display: inline-table;
+}
+.widget_twitter li:first-of-type {
+	padding-left: 0;
+}
+.widget_twitter li:last-of-type {
+	padding-right: 0;
+}
+.widget_twitter .entry-content a {
+	color: white;
+}
+.widget_twitter .entry-content a:hover {
+	text-decoration: underline;
 }
 .widget_twitter span.entry-meta {
 	display: block;
 	padding-top: 2px;
 }
+.widget_twitter .entry-meta a {
+	font-weight: 400;
+	text-transform:uppercase;
+	color: black;
+}
 /* Flickr widget */
-div.widget_flickr {
-	background: #000;
-	padding: 0 3px 5px 8px;
-	margin-bottom: 11px;
-}	 
 .slickr-flickr-gallery {
+	margin: 20px auto !important;
 	padding: 0 !important;
 }	
 .slickr-flickr-gallery ul li {
@@ -216,14 +266,38 @@ div.widget_flickr {
     padding: 0 5px 5px 0 !important;
 } 
 .slickr-flickr-gallery ul a:hover img {
-    background-color: #000 !important;
+    background-color: transparent !important;
     opacity:0.7;
 	filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
 footer {
-	font-size: 14px;
+	padding-top: 20px !important;
+	font-size: 0.8em;
 	text-align: center;
+}
+footer .social-icon {
+	display: inline-block;
+}
+footer .social-icon a {
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	display: inline-block;
+	background: no-repeat center center;
+}
+footer .social-icon.twitter-icon a {
+	background-image: url('images/twitter_round.png');
+}
+footer .social-icon.facebook-icon a {
+	background-image: url('images/facebook_round.png');
+	margin-right: 0;
+}
+.contact {
+	margin: 20px auto;
+}
+.contact p {
+	margin: 5px;
 }
 
 .copyright {
@@ -397,54 +471,7 @@ input[type=submit] {
 }
 
 a {
-	color: #000;
-}	
-
-#share_widget {
-	font-size: 12px;
-	color: #acaaaa;
-}
-#tag_line h2 {
-	font-size: 30px;
-	line-height: 1;
-	letter-spacing: 0.02em;
-	font-weight: 500;
-	color: #c8c6c5;
-}	
-#tag_line .alt {
-	color: #eae8e6;
-}	
-#main_nav a {
-	font-size: 15px;
-	letter-spacing: 0.03em;
-	font-weight: 300;
-	color: #fff;
-}
-#main_nav a:hover,
-.home #main_nav .menu-item-home a,
-#main_nav .current-menu-item a {
-	color: #000;
-}
-	
-.spcr {
-	font-size: 11px;
-	font-weight: 500;
-}
-.spcr .current {
-	color: #000;
-}
-.spcr a {
-	color: #000;
-}
-.spcr a:hover,
-.spcr .current {
-	color: #ffdb04;
-}
-
-h2.page_title {
-	font-size: 27px;  
-	font-weight: 600;
-	letter-spacing: 0.001em;
+	color: white;
 }
 
 #single_video h2 {
@@ -506,20 +533,6 @@ h2.bold_ex {
 	color: #ffdb04;
 	background-color: #000;
 }
-
-.widget_twitter div {
-	font-size: 13px;
-	letter-spacing: 0.005em;
-	font-weight: 500; 
-}
-.widget_twitter .entry-content a:hover {
-	text-decoration: underline;
-}	
-.widget_twitter .entry-meta a {
-	color: #a2a1a1;
-	font-weight: 400;
-	text-transform:uppercase;
-}	
 
 .sb_button a {
 	font-size: 15px;

@@ -5,11 +5,11 @@ Local Wordpress development
 
 ## TODO
 
-- Restore clone from live URL
-- Setup git repo in theme folder
-- Pull in latest files
-- Style the heck out of the front-page
-- Footer content
+- Other pages:
+	- 
+- Clients slideshow
+- Assets
+- Font
 
 
 

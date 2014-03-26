@@ -69,10 +69,13 @@ get_header(); ?>
 						?>
 						
 						<div class="teaser">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser_img">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser-img">
+								<div class="teaser-overlay"></div>
 								<?php the_post_thumbnail('post-thumbnail', array('alt'=>'Project Preview','title'=>'View Now')); ?>
-								<p class="excerpt"><?php echo get_the_excerpt(); ?><br /></p>
-								<h3><?php the_title(); ?></h3>
+								<div class="teaser-info">
+									<p class="excerpt"><?php echo get_the_excerpt(); ?><br /></p>
+									<h3><?php the_title(); ?></h3>
+								</div>
 							</a>
 						</div>
 
