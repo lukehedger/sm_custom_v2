@@ -5,24 +5,26 @@ Local Wordpress development
 
 ## TODO
 
-- Other pages:
-	- About styles + icons
-	- Contact styles
-	- Single styles + pagination?
- 	- Work - create new page + show all posts without Categories? + pagination styles
+- [ ] Other pages:
+	- [ ] Contact content (needs column six structure)
+	- [ ] About background
+	- [ ] Single styles + pagination?
+ 	- [ ] Work - create new page + show all posts without Categories? + pagination styles
  		- something like
  			$args = array( 'post_type' => 'post', 'posts_per_page' => 6 );
 			$loop2 = new WP_Query( $args );
- 	- Services page - create new + styles/content (clone from about)
-- Theme overview/thumbnail?
-- Font
-- Assets
-- Clients slideshow
-- Directors dropdown and page?
+ 	- [ ] Services page - create new + styles/content (clone from about)
+- [x] Theme overview/thumbnail?
+- [ ] Font -> then h2.page_title and body type styles in typography
+- [ ] Clients slideshow -> [plugin](http://wordpress.org/plugins/sponsors-carousel/)
+- [ ] Menu -> [see](http://localhost/wp-admin/nav-menus.php) and [here](http://codex.wordpress.org/Function_Reference/wp_nav_menu) - will need to target active classes in css
+- [ ] Directors dropdown and page?
+- [ ] Assets -> wp-uploads folders needs to be cleared out and left with required assets only
 
 
 ## Go Live
 
-- Backup current live, ready for restore (test restore, ie make a slight change and then restore to test overwrite)
-- Copy theme files to live (create/activate new theme - sm_custom_v2)
-- Reconfigure Widget structure/settings to match local
+- [ ] Backup current live, ready for restore (test restore, ie make a slight change and then restore to test overwrite)
+- [ ] Reconfigure Widget structure/settings to match local
+- [ ] About page text
+- [ ] Copy theme files to live (create/activate new theme - sm_custom_v2)

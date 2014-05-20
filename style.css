@@ -304,6 +304,26 @@ footer .social-icon.facebook-icon a {
 	color: #828175;
 }
 
+/* PAGES
+-------------------------------------------------------------- */
+
+#about .inner {
+	/* TODO - need real colors, background image and padding dimensions */
+	padding: 200px 120px 40px;
+	background: #ccc;
+}
+
+#contact {
+
+}
+
+#google_map {
+	
+}
+
+
+/* OLD SHIZ FOR CLEAROUT
+-------------------------------------------------------------- */
 
 
 /* The main section structure */
@@ -418,14 +438,6 @@ h2.bold_ex {
 #about_content p,
 #contact_content p {
 	padding-bottom: 1em;
-}	
-
-#google_map {
-	margin-right: 11px;
-}	
-#google_map span {
-	float: right;
-	padding-top: 8px;
 }
 
 
