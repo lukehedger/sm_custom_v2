@@ -6,14 +6,14 @@ Local Wordpress development
 ## TODO
 
 - [ ] Other pages:
-	- [ ] Contact content (needs column six structure)
-	- [ ] About background
+	- [x] Contact content (needs column six structure)
+	- [ ] About & Services background
+	- [ ] Services page and content
 	- [ ] Single styles + pagination?
  	- [ ] Work - create new page + show all posts without Categories? + pagination styles
  		- something like
  			$args = array( 'post_type' => 'post', 'posts_per_page' => 6 );
 			$loop2 = new WP_Query( $args );
- 	- [ ] Services page - create new + styles/content (clone from about)
 - [x] Theme overview/thumbnail?
 - [ ] Font -> then h2.page_title and body type styles in typography
 - [ ] Clients slideshow -> [plugin](http://wordpress.org/plugins/sponsors-carousel/)
@@ -25,6 +25,7 @@ Local Wordpress development
 ## Go Live
 
 - [ ] Backup current live, ready for restore (test restore, ie make a slight change and then restore to test overwrite)
-- [ ] Reconfigure Widget structure/settings to match local
-- [ ] About page text
+- [ ] Reconfigure Widget structure/settings to match local - Sidebar
+- [ ] About, Contact and Service page content
+- [ ] Menu structure
 - [ ] Copy theme files to live (create/activate new theme - sm_custom_v2)

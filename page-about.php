@@ -5,13 +5,13 @@
 
 	get_header(); ?>
 
-		<div id="content">
+		<div id="content" class="about">
 
-			<div class="row" id="about">
+			<div class="row">
 				<div class="column twelve">
-					<div class="inner">
+					<div class="inner box">
 			
-						<h2 class="page_title"><?php the_title(); ?></h2>
+						<h2 class="page-title"><?php the_title(); ?></h2>
 						
 						<!-- <div id="vid_embed"><?php echo get_post_meta($post->ID, '_videoembed_manual', true); ?></div> -->
 			

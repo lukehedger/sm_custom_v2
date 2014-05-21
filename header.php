@@ -70,12 +70,17 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
 							</a>
 						</div>
 						<nav role="navigation">
-							<a href="/" class="active">Home</a>
-							<a href="/about">About</a> 
-							<a href="/work">Our Work</a> 
-							<a href="">Directors</a> 
-							<a href="/services">Services</a> 
-							<a href="/contact">Contact</a>
+
+							<?php
+
+								$nav_args = array(
+									'container' => 'none', 
+									'items_wrap' => '<ul class="nav_left"><li id="menu-item-home" class="menu-item menu-item-home"><a href="' . home_url() . '">home</a></li>%3$s</ul>'
+									);						
+								wp_nav_menu($nav_args);
+
+							?>
+
 						</nav>
 					</div>
 				</div>

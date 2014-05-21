@@ -11,7 +11,7 @@
 
 	get_header(); ?>
 		
-		<div id="content">
+		<div id="content" class="front-page">
 			
 			<div class="row" id="hero">
 				<div class="column twelve">

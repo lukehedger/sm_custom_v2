@@ -61,6 +61,11 @@ nav {
 	right: 0;
 	bottom: 0;
 }
+
+.menu-item {
+	display: inline;
+}
+
 nav a {
 	margin-right: 30px;
 	font-size: 24px;
@@ -307,14 +312,29 @@ footer .social-icon.facebook-icon a {
 /* PAGES
 -------------------------------------------------------------- */
 
-#about .inner {
-	/* TODO - need real colors, background image and padding dimensions */
-	padding: 200px 120px 40px;
-	background: #ccc;
+.inner.box {
+	padding: 200px 120px 60px;
 }
 
-#contact {
+.about .inner.box, .services .inner.box {
+	/* TODO - need background image and real color */
+	background: url("") no-repeat center top #D6D0C2;
+}
 
+.contact .page-title {
+	padding: 5px;
+}
+.contact .contact-details {
+	width: 100%;
+	padding: 20px 120px 60px;
+	float: left;
+	background-color: #D6D0C2;
+}
+
+.contact ul, .contact li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 #google_map {
