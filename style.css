@@ -76,7 +76,7 @@ nav a {
 nav a:last-of-type {
 	/* margin-right: 0; */
 }
-nav a:hover, nav a:focus, nav a:active, nav a.active {
+nav a:hover, nav a:focus, nav a:active, nav .current-menu-item a, .home nav .menu-item-home a {
 	text-decoration: none;
 	color: #998643;
 }
