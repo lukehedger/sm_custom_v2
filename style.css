@@ -189,6 +189,7 @@ nav a:hover, nav a:focus, nav a:active, nav .current-menu-item a, .home nav .men
 }
 .teaser h3 {
 	overflow: hidden;
+	line-height: 25px;
 	font-size: 18px;
 	font-weight: 600;
 	color: white;
@@ -319,6 +320,16 @@ footer .social-icon.facebook-icon a {
 .about .inner.box, .services .inner.box {
 	/* TODO - need background image and real color */
 	background: url("") no-repeat center top #D6D0C2;
+}
+
+.work .teaser h3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	height: 25px;
 }
 
 .contact .page-title {
