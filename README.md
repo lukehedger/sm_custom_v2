@@ -11,7 +11,7 @@ Local Wordpress development
 	- [x] Services page
  	- [x] Work - create new page + show all posts without Categories
 	- [x] Work styles
-	- [ ] Single styles
+	- [x] Single styles
 	- [ ] Pagination - home, work, single
 - [x] Theme overview/thumbnail?
 - [ ] Font -> then h2.page-title and body type styles in typography

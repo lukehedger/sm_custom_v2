@@ -22,7 +22,6 @@
 
 						?>
 
-
 						<div class="teaser">
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser-img">
 								<div class="teaser-overlay"></div>
