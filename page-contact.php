@@ -7,7 +7,7 @@
 
 		<div id="content" class="contact">
 
-			<div class="row">
+			<div class="row" id="main">
 				<div class="column twelve">
 					<div class="inner">
 			
@@ -31,6 +31,25 @@
 
 						</div>
 
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="clients">
+				<div class="column twelve">
+					<div class="inner">
+						Clients slideshow
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="sidebar">
+				<div class="column twelve">
+					<div class="inner">
+						<?php
+							if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+
+						<?php endif; // end primary widget area ?>
 					</div>
 				</div>
 			</div>

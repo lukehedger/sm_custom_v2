@@ -12,10 +12,11 @@ Local Wordpress development
  	- [x] Work - create new page + show all posts without Categories
 	- [x] Work styles
 	- [x] Single styles
-	- [ ] Pagination - home, work, single
+	- [x] Pagination - home, work, single
 - [x] Theme overview/thumbnail?
+- [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
+- [ ] Update logo
 - [ ] Font -> then h2.page-title and body type styles in typography
-- [ ] Clients slideshow -> [plugin](http://wordpress.org/plugins/sponsors-carousel/)
 - [x] Menu -> [see](http://localhost/wp-admin/nav-menus.php) and [here](http://codex.wordpress.org/Function_Reference/wp_nav_menu) - will need to target active classes in css
 - [ ] Directors dropdown and page?
 - [ ] Assets -> wp-uploads folders needs to be cleared out and left with required assets only. Use these locally to test.

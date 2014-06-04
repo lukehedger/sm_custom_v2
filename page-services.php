@@ -7,7 +7,7 @@
 
 		<div id="content" class="services">
 
-			<div class="row">
+			<div class="row" id="main">
 				<div class="column twelve">
 					<div class="inner box">
 			
@@ -23,6 +23,25 @@
 			
 						<?php endwhile; ?>
 
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="clients">
+				<div class="column twelve">
+					<div class="inner">
+						Clients slideshow
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="sidebar">
+				<div class="column twelve">
+					<div class="inner">
+						<?php
+							if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+
+						<?php endif; // end primary widget area ?>
 					</div>
 				</div>
 			</div>

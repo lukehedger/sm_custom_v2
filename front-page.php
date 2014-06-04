@@ -83,22 +83,9 @@
 							<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 						<?php endif; ?>
 						
-						<?php
-						// Define arguments for pagination function
-							// Create an unlikely large integer for use in $paginate_args
-							$big = 999999999; 			
-							$paginate_args = array(
-								'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
-								'format' => '?paged=%#%',
-								'show_all' => false,
-								'mid_size' => 1,
-								'current' => max( 1, get_query_var('paged') ),
-								'total' => $wp_query->max_num_pages,
-								'prev_text' => ' Prev',
-								'next_text' => 'Next '
-							); 
-						?>
-						<!-- <span class="pagination"><?php echo paginate_links( $paginate_args );?></span> -->
+						<div class="pagination">
+							<?php pagination(); ?>
+						</div>
 
 					</div>
 				</div>

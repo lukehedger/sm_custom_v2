@@ -7,56 +7,69 @@
 
 		<div id="content" class="work">
 
-			<div class="row">
+			<div class="row" id="main">
 				<div class="column twelve">
 					<div class="inner">
 
 						<?php
 
-							$args = array( 'post_type' => 'post', 'posts_per_page' => 15 );
-							$loop2 = new WP_Query( $args );
+						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-							while ( $loop2->have_posts() ) : $loop2->the_post();
+						query_posts(array(
+							'post_type'      => 'post', // You can add a custom post type if you like
+							'paged'          => $paged,
+							'posts_per_page' => 15
+						));
 
-							// print_r($loop2);
+						if ( have_posts() ) : ?>
 
-						?>
+						<?php while ( have_posts() ) : the_post(); ?>
 
-						<div class="teaser">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser-img">
-								<div class="teaser-overlay"></div>
-								<?php the_post_thumbnail('post-thumbnail', array('alt'=>'Project Preview','title'=>'View Now')); ?>
-								<div class="teaser-info">
-									<!-- <p class="excerpt"><?php echo get_the_excerpt(); ?><br /></p> -->
-									<h3><?php the_title(); ?></h3>
-								</div>
-							</a>
-						</div>
+							<div class="teaser">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser-img">
+									<div class="teaser-overlay"></div>
+									<?php the_post_thumbnail('post-thumbnail', array('alt'=>'Project Preview','title'=>'View Now')); ?>
+									<div class="teaser-info">
+										<h3><?php the_title(); ?></h3>
+									</div>
+								</a>
+							</div>
 
 						<?php endwhile; ?>
 
-						<!-- PAGINATION -->
-						<?php
-							// $big = 999999999;
-							// $paginate_args = array(
-							// 	'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
-							// 	'format' => '?paged=%#%',
-							// 	'show_all' => false,
-							// 	'mid_size' => 1,
-							// 	'current' => max( 1, get_query_var('paged') ),
-							// 	'total' => $wp_query->max_num_pages,
-							// 	'prev_text' => ' Prev',
-							// 	'next_text' => 'Next '
-							// ); 
-						?>
-						<!-- <span class="pagination"><?php echo paginate_links( $paginate_args );?></span> -->
+							<div class="pagination">
+								<?php pagination(); ?>
+							</div>
+
+						<?php else : ?>
+						    
+							<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+							
+						<?php endif; ?>
 
 					</div>
 				</div>
 			</div>
 
-		</div><!-- /#content -->
+			<div class="row" id="clients">
+				<div class="column twelve">
+					<div class="inner">
+						Clients slideshow
+					</div>
+				</div>
+			</div>
 
-		<?php get_sidebar(); ?>
+			<div class="row" id="sidebar">
+				<div class="column twelve">
+					<div class="inner">
+						<?php
+							if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+
+						<?php endif; // end primary widget area ?>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- /#content -->
 		
 	<?php get_footer(); ?>
