@@ -355,8 +355,7 @@ footer .social-icon.facebook-icon a {
 }
 
 .about .inner.box, .services .inner.box {
-	/* TODO - need background image and real color */
-	background: url("") no-repeat center top #D6D0C2;
+	background: url("images/spider-moose.png") no-repeat center top #D6D0C2;
 }
 
 .work .teaser h3, .single .teaser h3 {

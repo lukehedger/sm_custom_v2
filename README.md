@@ -5,22 +5,25 @@ Local Wordpress development
 
 ## TODO
 
-- [ ] Other pages:
+- [x] Other pages:
 	- [x] Contact content (needs column six structure)
-	- [ ] About & Services background
+	- [x] About & Services background
 	- [x] Services page
  	- [x] Work - create new page + show all posts without Categories
 	- [x] Work styles
 	- [x] Single styles
 	- [x] Pagination - home, work, single
 - [x] Theme overview/thumbnail?
-- [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
-- [ ] Update logo
-- [ ] Font -> then h2.page-title and body type styles in typography
+- [x] Update logo
 - [x] Menu -> [see](http://localhost/wp-admin/nav-menus.php) and [here](http://codex.wordpress.org/Function_Reference/wp_nav_menu) - will need to target active classes in css
-- [ ] Directors dropdown and page?
+- [ ] Directors dropdown -> setup sample Menu, Tag and test query/page
+- [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
 - [ ] Assets -> wp-uploads folders needs to be cleared out and left with required assets only. Use these locally to test.
+- [ ] Font -> then h2.page-title and body type styles in typography
 
+## Staging
+
+- [ ] Mirror site on https://lukehedger.wordpress.com/wp-admin/
 
 ## Go Live
 
