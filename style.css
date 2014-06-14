@@ -153,7 +153,6 @@ nav ul li:hover .sub-menu {
 	overflow: hidden;
 	position: absolute;
 	bottom: 0;
-	left: 1px;
 	z-index: 60;
 	background: #bebdac;
 }
