@@ -13,16 +13,36 @@ get_header(); ?>
 
 		<div id="content">
 
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<div class="row" id="main">
+				<div class="column twelve">
+					<div class="inner">
 
-			<!--Run the loop to output the posts. Put various tags here to show required content-->
-			
-			<?php endwhile; else: ?>
-				<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-			<?php endif; ?>
+						<h2 class="tag-name">Tag: <?php single_tag_title(); ?></h2>
+
+						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+						<!--Run the loop to output the posts. Put various tags here to show required content-->
+
+							<div class="teaser">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser-img">
+									<div class="teaser-overlay"></div>
+									<?php the_post_thumbnail('post-thumbnail', array('alt'=>'Project Preview','title'=>'View Now')); ?>
+									<div class="teaser-info">
+										<h3><?php the_title(); ?></h3>
+									</div>
+								</a>
+							</div>
+					
+						<?php endwhile; else: ?>
+							<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+						<?php endif; ?>
+
+					</div>
+				</div>
+			</div>
+
+			<?php require_once('inc/sidebar.inc'); ?>
 
 		</div><!-- #content -->
-		
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

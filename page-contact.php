@@ -40,7 +40,5 @@
 			<?php require_once('inc/sidebar.inc'); ?>
 
 		</div><!-- /#content -->
-
-		<?php get_sidebar(); ?>
 		
 	<?php get_footer(); ?>

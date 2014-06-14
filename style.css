@@ -60,14 +60,17 @@ nav {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	z-index: 20;
 }
 
 .menu-item {
-	display: inline;
+	margin-right: 30px;
+	float: left;
+	position: relative;
 }
 
 nav a {
-	margin-right: 30px;
+	display: block;
 	font-size: 24px;
 	text-decoration: none;
 	text-transform: lowercase;
@@ -76,9 +79,34 @@ nav a {
 nav a:last-of-type {
 	/* margin-right: 0; */
 }
-nav a:hover, nav a:focus, nav a:active, nav .current-menu-item a, .home nav .menu-item-home a {
+nav a:hover, nav a:focus, nav a:active, nav .current-menu-item a, .home nav .menu-item-home a, .current-menu-parent > a {
 	text-decoration: none;
 	color: #828175;
+}
+
+.sub-menu {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: -9999px;
+	background-color: rgba(130,129,117,0.95);
+}
+nav ul li:hover .sub-menu {
+	left: 0;
+}
+.sub-menu .menu-item {
+	float: none;
+	white-space: nowrap;
+	margin-right: 0;
+}
+.sub-menu .menu-item a {
+	padding: 5px 10px;
+	border-left: 5px solid transparent;
+	font-size: 16px;
+}
+.sub-menu .menu-item:hover a, .sub-menu .menu-item.current-menu-item a {
+	border-left-color: white;
+	color: white;
 }
 
 #hero {

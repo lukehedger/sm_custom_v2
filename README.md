@@ -17,7 +17,7 @@ Local Wordpress development
 - [x] Update logo
 - [x] Menu -> [see](http://localhost/wp-admin/nav-menus.php) and [here](http://codex.wordpress.org/Function_Reference/wp_nav_menu) - will need to target active classes in css
 - [x] Inc files
-- [ ] Directors dropdown -> setup sample Menu, Tag and test query/page
+- [x] Directors dropdown -> setup sample Menu, Tag and test query/page
 - [ ] Homepage hovers -> ellipsis
 - [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
 - [ ] Assets -> wp-uploads folders needs to be cleared out and left with required assets only. Use these locally to test.
