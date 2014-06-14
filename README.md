@@ -15,6 +15,10 @@ Local Wordpress development
 	- [x] Pagination - home, work, single
 - [x] Theme overview/thumbnail?
 - [x] Update logo
+- [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
+- [ ] Update logo
+- [ ] Font -> then h2.page-title and body type styles in typography
+- [ ] Homepage hovers -> ellipsis
 - [x] Menu -> [see](http://localhost/wp-admin/nav-menus.php) and [here](http://codex.wordpress.org/Function_Reference/wp_nav_menu) - will need to target active classes in css
 - [ ] Directors dropdown -> setup sample Menu, Tag and test query/page
 - [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
@@ -29,7 +33,7 @@ Local Wordpress development
 
 - [ ] Maintenance mode - [plugin](http://wordpress.org/plugins/wp-maintenance-mode/)
 - [ ] Backup current live, ready for restore (test restore, ie make a slight change and then restore to test overwrite)
-- [ ] Reconfigure Widget structure/settings to match local - Sidebar
+- [ ] Reconfigure Widget/plugin structure/settings to match local - Sidebar, Carousel
 - [ ] About, Contact and Service page content via Admin
 - [ ] Menu structure via Admin
 - [ ] Copy theme files to live (create/activate new theme - sm_custom_v2)
