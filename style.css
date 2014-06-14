@@ -225,14 +225,20 @@ nav ul li:hover .sub-menu {
 	z-index: 20;
 }
 .teaser p {
+	max-width: 372px;
 	padding: 0 60px;
 	font-size: 14px;
 	font-weight: 600;
-	line-height: 1.3;
+	line-height: 16px;
 	color: white;
 	position: absolute;
 	top: 30px;
 	z-index: 20;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 }
 .teaser img {
 	z-index: 0;

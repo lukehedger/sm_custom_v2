@@ -46,7 +46,6 @@
 <?php
 	if (is_front_page() or is_archive() or is_single()) {
 		echo '<script type="text/javascript" src="' . get_bloginfo( 'template_url' ) . '/scripts/jquery.min.js"></script>';
-		echo '<script type="text/javascript" src="' . get_bloginfo( 'template_url' ) . '/scripts/resize_teaser.js"></script>';
 	}
 	if (is_front_page()) {
 		echo '<script type="text/javascript" src="' . get_bloginfo( 'template_url' ) . '/scripts/jquery.easing.js"></script>';
