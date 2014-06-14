@@ -19,7 +19,7 @@ Local Wordpress development
 - [x] Inc files
 - [x] Directors dropdown -> setup sample Menu, Tag and test query/page
 - [x] Homepage hovers -> ellipsis ([JS solution](https://github.com/ftlabs/ftellipsis))
-- [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
+- [x] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
 - [ ] Font -> then h2.page-title and body type styles in typography
 
 ## Staging
