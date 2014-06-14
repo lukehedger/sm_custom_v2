@@ -15,12 +15,10 @@ Local Wordpress development
 	- [x] Pagination - home, work, single
 - [x] Theme overview/thumbnail?
 - [x] Update logo
-- [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
-- [ ] Update logo
-- [ ] Font -> then h2.page-title and body type styles in typography
-- [ ] Homepage hovers -> ellipsis
 - [x] Menu -> [see](http://localhost/wp-admin/nav-menus.php) and [here](http://codex.wordpress.org/Function_Reference/wp_nav_menu) - will need to target active classes in css
+- [x] Inc files
 - [ ] Directors dropdown -> setup sample Menu, Tag and test query/page
+- [ ] Homepage hovers -> ellipsis
 - [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
 - [ ] Assets -> wp-uploads folders needs to be cleared out and left with required assets only. Use these locally to test.
 - [ ] Font -> then h2.page-title and body type styles in typography
