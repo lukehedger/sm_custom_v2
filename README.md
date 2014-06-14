@@ -20,7 +20,6 @@ Local Wordpress development
 - [x] Directors dropdown -> setup sample Menu, Tag and test query/page
 - [x] Homepage hovers -> ellipsis ([JS solution](https://github.com/ftlabs/ftellipsis))
 - [ ] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
-- [ ] Assets -> wp-uploads folders needs to be cleared out and left with required assets only. Use these locally to test.
 - [ ] Font -> then h2.page-title and body type styles in typography
 
 ## Staging
