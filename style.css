@@ -182,6 +182,7 @@ nav ul li:hover .sub-menu {
 	margin-right: 0;
 }
 .teaser a.teaser-img {
+	width: 372px;
 	height: 174px;
 	display: block;
 	position: relative;
@@ -240,6 +241,8 @@ nav ul li:hover .sub-menu {
 	-webkit-box-orient: vertical;
 }
 .teaser img {
+	width: 372px !important;
+	height: 174px !important;
 	z-index: 0;
 }
 

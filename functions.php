@@ -3,9 +3,9 @@
 // WordPress Post Thumbnail Support
 if (function_exists('add_theme_support')) {
     add_theme_support('post-thumbnails');
-    set_post_thumbnail_size(372, 174, true);
     add_image_size('featured', 718, 375, true);
     add_image_size('category', 80, 80, true);
+    add_image_size('custom', 372, 174, true);
 }
 
 // Set compression quality for generated images to 100%
