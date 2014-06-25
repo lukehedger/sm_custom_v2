@@ -5,32 +5,21 @@ Local Wordpress development
 
 ## TODO
 
-- [x] Other pages:
-	- [x] Contact content (needs column six structure)
-	- [x] About & Services background
-	- [x] Services page
- 	- [x] Work - create new page + show all posts without Categories
-	- [x] Work styles
-	- [x] Single styles
-	- [x] Pagination - home, work, single
-- [x] Theme overview/thumbnail?
-- [x] Update logo
-- [x] Menu -> [see](http://localhost/wp-admin/nav-menus.php) and [here](http://codex.wordpress.org/Function_Reference/wp_nav_menu) - will need to target active classes in css
-- [x] Inc files
-- [x] Directors dropdown -> setup sample Menu, Tag and test query/page
-- [x] Homepage hovers -> ellipsis ([JS solution](https://github.com/ftlabs/ftellipsis))
-- [x] Clients slideshow -> [plugin](http://cmoreira.net/logos-showcase/documentation/)
 - [ ] Font -> then h2.page-title and body type styles in typography
+- [ ] Carousel buttons
+- [ ] New logo
+- [ ] Slider assets
 
 ## Staging
 
-- [ ] Mirror site on https://lukehedger.wordpress.com/wp-admin/
+- [ ] Create subdomain
+- [ ] Clone live site
+- [ ] Local config/content
 
 ## Go Live
 
 - [ ] Maintenance mode - [plugin](http://wordpress.org/plugins/wp-maintenance-mode/)
-- [ ] Backup current live, ready for restore (test restore, ie make a slight change and then restore to test overwrite)
+- [ ] Backup current live - including screenshots of current config
 - [ ] Reconfigure Widget/plugin structure/settings to match local - Sidebar, Carousel
 - [ ] About, Contact and Service page content via Admin
-- [ ] Menu structure via Admin
-- [ ] Copy theme files to live (create/activate new theme - sm_custom_v2)
+- [ ] Menu structure via Admin, including Directors submenu
