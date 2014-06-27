@@ -67,3 +67,19 @@ a:hover {
 	     url('../fonts/HelveticaNeue-Light.ttf')  format('truetype'),
 	     url('../fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
 }
+@font-face {
+	font-family: 'HelveticaNeue-Bold';
+	src: url('../fonts/HelveticaNeue-Bold.eot?') format('eot'), 
+	     url('../fonts/HelveticaNeue-Bold.otf')  format('opentype'),
+	     url('../fonts/HelveticaNeue-Bold.woff') format('woff'), 
+	     url('../fonts/HelveticaNeue-Bold.ttf')  format('truetype'),
+	     url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+}
+@font-face {
+	font-family: 'HelveticaNeue-Roman';
+	src: url('../fonts/HelveticaNeue-Roman.eot?') format('eot'), 
+	     url('../fonts/HelveticaNeue-Roman.otf')  format('opentype'),
+	     url('../fonts/HelveticaNeue-Roman.woff') format('woff'), 
+	     url('../fonts/HelveticaNeue-Roman.ttf')  format('truetype'),
+	     url('../fonts/HelveticaNeue-Roman.svg#HelveticaNeue-Roman') format('svg');
+}
