@@ -286,6 +286,32 @@ nav ul li:hover .sub-menu {
 	text-decoration: none;
 }
 
+#clients {
+
+}
+#clients .lshowcase-logos .bx-wrapper .bx-prev, #clients .lshowcase-logos .bx-wrapper .bx-next {
+	width: 32px;
+	height: 32px;
+	background-image: url('images/carousel_arrow.svg');
+	background-position: 0 0;
+	background-size: 100%;
+	opacity: 0.5;
+	-moz-transition: 0.2s;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+#clients .lshowcase-logos .bx-wrapper .bx-prev:hover, #clients .lshowcase-logos .bx-wrapper .bx-next:hover {
+	opacity: 1;
+}
+#clients .lshowcase-logos .bx-wrapper .bx-prev {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
 #sidebar {
 	font-size: 18px;
 	text-align: center;
