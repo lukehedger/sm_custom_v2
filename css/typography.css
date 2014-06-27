@@ -1,5 +1,5 @@
 body {
-	font: normal 1em/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: normal 1em/1.4 'HelveticaNeue-Light',Helvetica,Arial,sans-serif;
 	color: #595241;
 }
 
@@ -56,4 +56,14 @@ a:hover {
 }
 ::selection {
 	background: #b3d4fc;
+}
+
+/* FONTS */
+@font-face {
+	font-family: 'HelveticaNeue-Light';
+	src: url('../fonts/HelveticaNeue-Light.eot?') format('eot'), 
+	     url('../fonts/HelveticaNeue-Light.otf')  format('opentype'),
+	     url('../fonts/HelveticaNeue-Light.woff') format('woff'), 
+	     url('../fonts/HelveticaNeue-Light.ttf')  format('truetype'),
+	     url('../fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
 }
