@@ -216,12 +216,14 @@ nav ul li:hover .sub-menu {
 	display: none;
 }
 .teaser h3 {
+	width: 100%;
 	overflow: hidden;
 	line-height: 25px;
 	font-size: 18px;
 	font-weight: 600;
 	color: white;
-	position: relative;
+	position: absolute;
+	bottom: 0;
 	z-index: 20;
 }
 .teaser p {
