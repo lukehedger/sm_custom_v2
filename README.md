@@ -5,10 +5,11 @@ Local Wordpress development
 
 ## TODO
 
-- [ ] Font -> then h2.page-title and body type styles in typography
+- [x] Font -> then h2.page-title and body type styles in typography
 - [x] Carousel buttons
 - [ ] Carousel images
 - [ ] New logo
+- [ ] Mast slider images
 
 ## Staging
 

@@ -288,7 +288,7 @@ nav ul li:hover .sub-menu {
 }
 
 #clients {
-
+	overflow: hidden;
 }
 #clients .lshowcase-logos .bx-wrapper .bx-prev, #clients .lshowcase-logos .bx-wrapper .bx-next {
 	width: 32px;
