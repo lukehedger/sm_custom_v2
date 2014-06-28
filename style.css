@@ -115,16 +115,16 @@ nav ul li:hover .sub-menu {
 	color: white;
 }
 #slide {
-	width: 718px;
-	height: 375px;
+	width: 1180px;
+	height: 483px;
 	background: #000;
 	margin: 10px auto;
 	position: relative;
 	overflow: hidden;
 }
 .slide_panel {
-	width: 718px;
-	height: 375px;
+	width: 1180px;
+	height: 483px;
 	float: left;
 	display: block;
 	position: relative;
@@ -134,15 +134,17 @@ nav ul li:hover .sub-menu {
 	height: 100px;
 	position: absolute;
 	left: 0;
-	top: 130px;
+	top: 50%;
+	margin-top: -50px;
 	z-index: 80;
 }		
 #slide_nav_right {
 	width: 28px;
 	height: 100px;
 	position: absolute;
-	left: 690px;
-	top: 130px;
+	right: 0;
+	top: 50%;
+	margin-top: -50px;
 	z-index: 80;
 }
 #slide_nav_left img,

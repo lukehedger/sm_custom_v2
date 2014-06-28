@@ -21,7 +21,7 @@
 							<?php //get number of posts in slideshow and set wrapper width accordingly...
 							$postsInCat = get_term_by('name','featured','category');
 							$postsInCat = $postsInCat->count;
-							$wrapWidth = 'width: '.($postsInCat*718).'px;';
+							$wrapWidth = 'width: '.($postsInCat*1180).'px;';
 							?>
 							<div id="slide_wrapper" style="<?php echo $wrapWidth; ?> margin-left: 0px;">
 								
