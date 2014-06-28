@@ -71,6 +71,7 @@ nav {
 
 nav a {
 	display: block;
+	font-family: 'HelveticaNeue-Light',Helvetica,Arial,sans-serif;
 	font-size: 24px;
 	text-decoration: none;
 	text-transform: lowercase;
@@ -272,7 +273,7 @@ nav ul li:hover .sub-menu {
 	width: 24px;
 	height: 24px;
 	margin: 0 2px;
-	padding-top: 2px;
+	padding-top: 3px;
 	text-align: center;
 	display: inline-block;
 	border-radius: 50%;
@@ -422,7 +423,7 @@ footer .social-icon.facebook-icon a {
 	background: url("images/spider-moose.png") no-repeat center 50px #D6D0C2;
 }
 
-.work .teaser h3, .single .teaser h3 {
+.work .teaser h3, .single .teaser h3, .tags .teaser h3 {
 	position: absolute;
 	top: 0;
 	right: 0;
