@@ -7,9 +7,10 @@ Local Wordpress development
 
 - [x] Font -> then h2.page-title and body type styles in typography
 - [x] Carousel buttons
-- [ ] Carousel images/settings
+- [x] Carousel images/settings
 - [x] New logo and S&M image
 - [x] Mast slider images
+- [ ] Update Directors sub-menu styles
 
 ## Staging
 
