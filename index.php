@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-		<div id="content">
+		<div id="content" class="tags">
 
 			<div class="row" id="main">
 				<div class="column twelve">

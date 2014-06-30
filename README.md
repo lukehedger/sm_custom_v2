@@ -5,16 +5,17 @@ Local Wordpress development
 
 ## TODO
 
-- [ ] Font -> then h2.page-title and body type styles in typography
+- [x] Font -> then h2.page-title and body type styles in typography
 - [x] Carousel buttons
-- [ ] Carousel images
-- [ ] New logo
+- [ ] Carousel images/settings
+- [ ] New logo and S&M image
+- [x] Mast slider images
 
 ## Staging
 
 - [x] Create subdomain
 - [x] Clone live site
-- [ ] Local config/content -> menu, pages, carousel
+- [x] Local config/content -> menu, pages, carousel
 
 ## Go Live
 

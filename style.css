@@ -71,6 +71,7 @@ nav {
 
 nav a {
 	display: block;
+	font-family: 'HelveticaNeue-Light',Helvetica,Arial,sans-serif;
 	font-size: 24px;
 	text-decoration: none;
 	text-transform: lowercase;
@@ -114,16 +115,16 @@ nav ul li:hover .sub-menu {
 	color: white;
 }
 #slide {
-	width: 718px;
-	height: 375px;
+	width: 1180px;
+	height: 483px;
 	background: #000;
 	margin: 10px auto;
 	position: relative;
 	overflow: hidden;
 }
 .slide_panel {
-	width: 718px;
-	height: 375px;
+	width: 1180px;
+	height: 483px;
 	float: left;
 	display: block;
 	position: relative;
@@ -133,15 +134,17 @@ nav ul li:hover .sub-menu {
 	height: 100px;
 	position: absolute;
 	left: 0;
-	top: 130px;
+	top: 50%;
+	margin-top: -50px;
 	z-index: 80;
 }		
 #slide_nav_right {
 	width: 28px;
 	height: 100px;
 	position: absolute;
-	left: 690px;
-	top: 130px;
+	right: 0;
+	top: 50%;
+	margin-top: -50px;
 	z-index: 80;
 }
 #slide_nav_left img,
@@ -272,7 +275,7 @@ nav ul li:hover .sub-menu {
 	width: 24px;
 	height: 24px;
 	margin: 0 2px;
-	padding-top: 2px;
+	padding-top: 3px;
 	text-align: center;
 	display: inline-block;
 	border-radius: 50%;
@@ -287,7 +290,7 @@ nav ul li:hover .sub-menu {
 }
 
 #clients {
-
+	overflow: hidden;
 }
 #clients .lshowcase-logos .bx-wrapper .bx-prev, #clients .lshowcase-logos .bx-wrapper .bx-next {
 	width: 32px;
@@ -422,7 +425,7 @@ footer .social-icon.facebook-icon a {
 	background: url("images/spicer-moore.png") no-repeat center 50px #D6D0C2;
 }
 
-.work .teaser h3, .single .teaser h3 {
+.work .teaser h3, .single .teaser h3, .tags .teaser h3 {
 	position: absolute;
 	top: 0;
 	right: 0;

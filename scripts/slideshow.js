@@ -12,7 +12,7 @@ var settings = {
 	autoSlide: true,
 	autoSlideInterval: 8000,
 	panelClass: '.slide_panel',
-	panelWidth: 718,
+	panelWidth: 1180,
 	slideEaseDuration: 1000, 
 	slideEaseFunction: 'easeInOutExpo',
 	wrapperId: '#slide_wrapper'
