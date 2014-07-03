@@ -8,7 +8,7 @@ Local Wordpress development
 ### Homepage:
 - [x] Left and Right arrow icons missing from main carousel, you should have these as SVG *change .slide_nav_left/right img src on front-page.php plus styles for flipped arrow - consider background-image instead to match .bx-prev/next*
 - [ ] The text title on the main carousel image, is this part of the image? Can it stay fixed to the left edge and just change as the new image slides in? *only way would be to use postion:fixed on the h3/.teaser_title but might not work*
-- [ ] Strap line ‘creative. production. post production. distribution.’ should be in the dark colour #828175. white should be for links only. *change colour*
+- [x] Strap line ‘creative. production. post production. distribution.’ should be in the dark colour #828175. white should be for links only. *change colour*
 - [ ] The thumbnail images look squashed? In my PSD they should be 377 x 214 *need to change this on functions.php and style.css*
 - [ ] Check your spacings, the grid of thumbs should be the same width as the main carousel image 1180 pixels *fixed by above size change*
 - [ ] The rollovers on the thumbnails should be darker, are you just fading the image down? In the design I had a dark block #828175 set to about 80% opacity *change .teaser-overlay*
