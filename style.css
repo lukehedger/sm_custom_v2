@@ -124,28 +124,19 @@ nav ul li:hover .sub-menu {
 	float: left;
 	display: block;
 	position: relative;
-}	
-#slide_nav_left {
-	width: 28px;
-	height: 100px;
+}
+.slide_nav {
 	position: absolute;
-	left: 0;
 	top: 50%;
-	margin-top: -50px;
-	z-index: 80;
-}		
-#slide_nav_right {
-	width: 28px;
-	height: 100px;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	margin-top: -50px;
+	margin-top: -16px;
+	cursor: pointer;
 	z-index: 80;
 }
-#slide_nav_left img,
-#slide_nav_right img {
-	cursor: pointer;
+.slide_nav.slide_nav_left {
+	left: 0;
+}
+.slide_nav.slide_nav_right {
+	right: 0;
 }
 .slide_panel h3 {
 	padding: 10px 40px 10px 30px;
@@ -288,21 +279,22 @@ nav ul li:hover .sub-menu {
 #clients {
 	overflow: hidden;
 }
-#clients .lshowcase-logos .bx-wrapper .bx-prev, #clients .lshowcase-logos .bx-wrapper .bx-next {
+#clients .lshowcase-logos .bx-wrapper .bx-prev, #clients .lshowcase-logos .bx-wrapper .bx-next, #hero #slide .slide_nav {
 	width: 32px;
 	height: 32px;
 	background-image: url('images/svg/carousel_arrow.svg');
 	background-position: 0 0;
 	background-size: 100%;
-	opacity: 0.5;
 	-moz-transition: 0.2s;
 	-webkit-transition: 0.2s;
 	transition: 0.2s;
+	-webkit-filter: invert(100%);
+	text-shadow: 1px 1px 1px #333;
 }
-#clients .lshowcase-logos .bx-wrapper .bx-prev:hover, #clients .lshowcase-logos .bx-wrapper .bx-next:hover {
-	opacity: 1;
+#clients .lshowcase-logos .bx-wrapper .bx-prev:hover, #clients .lshowcase-logos .bx-wrapper .bx-next:hover, #hero #slide .slide_nav:hover {
+	-webkit-filter: invert(75%);
 }
-#clients .lshowcase-logos .bx-wrapper .bx-prev {
+#clients .lshowcase-logos .bx-wrapper .bx-prev, #hero #slide .slide_nav_left {
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);

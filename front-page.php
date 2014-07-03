@@ -39,12 +39,8 @@
 								<div class="clear"></div>	
 							
 							</div>	
-							<div id="slide_nav_left" onclick="slideArrowLeft()">
-								<img src="<?php bloginfo('template_url'); ?>/images/slide_left.png" alt="previous" />
-							</div>	
-							<div id="slide_nav_right" onclick="slideArrowRight()">
-								<img src="<?php bloginfo('template_url'); ?>/images/slide_right.png" alt="next" />
-							</div>
+							<div class="slide_nav slide_nav_left" onclick="slideArrowLeft()"></div>	
+							<div class="slide_nav slide_nav_right" onclick="slideArrowRight()"></div>
 						</div>
 
 					</div>
