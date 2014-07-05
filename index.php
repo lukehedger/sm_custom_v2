@@ -21,8 +21,6 @@ get_header(); ?>
 
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-						<!--Run the loop to output the posts. Put various tags here to show required content-->
-
 							<div class="teaser">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="teaser-img">
 									<div class="teaser-overlay"></div>

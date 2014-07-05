@@ -359,14 +359,15 @@ nav ul li:hover .sub-menu {
 .slickr-flickr-gallery ul li {
 	float: none !important;
 	margin: 0 !important;
+    padding: 0 25px 5px 0 !important;
+}
+.slickr-flickr-gallery ul li:last-of-type {
+	padding-right: 0 !important;
 }
 .slickr-flickr-gallery ul img {
     border: 0px solid #A9A9A9 !important;
     margin: 0 !important;
-    padding: 0 25px 5px 0 !important;
-}
-.slickr-flickr-gallery ul img:last-of-type {
-	padding-right: 0 !important;
+    padding: 0 !important;
 }
 .slickr-flickr-gallery ul a:hover img {
     background-color: transparent !important;
