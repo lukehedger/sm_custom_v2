@@ -37,10 +37,6 @@
 
 						<?php endwhile; ?>
 
-							<div class="pagination">
-								<?php pagination(); ?>
-							</div>
-
 						<?php else : ?>
 						    
 							<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
@@ -50,6 +46,8 @@
 					</div>
 				</div>
 			</div>
+
+			<?php require_once('inc/pagination.inc'); ?>
 
 			<?php require_once('inc/clients-carousel.inc'); ?>
 

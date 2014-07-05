@@ -78,10 +78,6 @@
 						<?php endwhile; else: ?>
 							<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 						<?php endif; ?>
-						
-						<div class="pagination">
-							<?php pagination(); ?>
-						</div>
 
 					</div>
 				</div>

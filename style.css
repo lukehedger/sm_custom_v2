@@ -163,17 +163,17 @@ nav ul li:hover .sub-menu {
 	color: white;
 }
 .teaser {
-	width: 372px;
-	margin: 0 20px 20px 0;
+	width: 377px;
+	margin: 0 24px 20px 0;
 	float: left;
 	text-align: center;
 }
-.teaser:last-of-type {
+.teaser:last-of-type, .teaser:nth-child(3n) {
 	margin-right: 0;
 }
 .teaser a.teaser-img {
-	width: 372px;
-	height: 174px;
+	width: 377px;
+	height: 214px;
 	display: block;
 	position: relative;
 	background-color: black;
@@ -191,7 +191,7 @@ nav ul li:hover .sub-menu {
 .teaser-overlay {
 	width: 100%;
 	height: 100%;
-	background: #bebdac;
+	background: #828175;
 	position: absolute;
 	z-index: 10;
 	-moz-transition: 0.5s;
@@ -217,7 +217,7 @@ nav ul li:hover .sub-menu {
 	z-index: 20;
 }
 .teaser p {
-	max-width: 372px;
+	max-width: 377px;
 	padding: 0 60px;
 	font-size: 14px;
 	font-weight: 600;
@@ -233,8 +233,8 @@ nav ul li:hover .sub-menu {
 	-webkit-box-orient: vertical;
 }
 .teaser img {
-	width: 372px !important;
-	height: 174px !important;
+	width: 377px !important;
+	height: 214px !important;
 	z-index: 0;
 }
 
@@ -243,22 +243,22 @@ nav ul li:hover .sub-menu {
 	border-bottom: 2px solid white;
 }
 
-.pagination {
+#pagination {
+	padding-bottom: 50px;
 	font-size: 14px;
 	text-align: center;
 }
-
-.pagination .prev {
+#pagination .prev {
 	margin-right: 20px;
 }
-.pagination .next {
+#pagination .next {
 	margin-left: 20px;
 }
-.pagination .prev:hover, .pagination .prev:focus, .pagination .prev:active, .pagination .next:hover, .pagination .next:focus, .pagination .next:active  {
+#pagination .prev:hover, .pagination .prev:focus, .pagination .prev:active, .pagination .next:hover, .pagination .next:focus, .pagination .next:active  {
 	color: #828175;
 	text-decoration: none;
 }
-.pagination .page-numbers:not(.next):not(.prev):not(.dots) {
+#pagination .page-numbers:not(.next):not(.prev):not(.dots) {
 	width: 24px;
 	height: 24px;
 	margin: 0 2px;
@@ -270,7 +270,7 @@ nav ul li:hover .sub-menu {
 	color: black;
 	font-size: 14px;
 }
-.pagination .page-numbers:not(.next):not(.prev):not(.dots):hover, .pagination .page-numbers.current {
+#pagination .page-numbers:not(.next):not(.prev):not(.dots):hover, .pagination .page-numbers.current {
 	background: #828175 !important;
 	color: white !important;
 	text-decoration: none;
@@ -304,16 +304,18 @@ nav ul li:hover .sub-menu {
 }
 
 #sidebar {
-	font-size: 18px;
 	text-align: center;
 }
 #sidebar li {
 	list-style-type: none;
 }
+#sidebar .widget-icon {
+	margin-bottom: 20px;
+	display: block;
+}
 /* Twitter widget */
 .widget_twitter div {
 	margin-bottom: 11px;
-	font-size: 0.8em;
 	overflow: hidden;
 }
 .widget_twitter h1 {
@@ -325,7 +327,7 @@ nav ul li:hover .sub-menu {
 }
 .widget_twitter li {
 	width: 33%;
-	padding: 0 20px;
+	/*padding: 0 20px;*/
 	display: inline-table;
 }
 .widget_twitter li:first-of-type {
@@ -361,8 +363,11 @@ nav ul li:hover .sub-menu {
 .slickr-flickr-gallery ul img {
     border: 0px solid #A9A9A9 !important;
     margin: 0 !important;
-    padding: 0 5px 5px 0 !important;
-} 
+    padding: 0 25px 5px 0 !important;
+}
+.slickr-flickr-gallery ul img:last-of-type {
+	padding-right: 0;
+}
 .slickr-flickr-gallery ul a:hover img {
     background-color: transparent !important;
     opacity:0.7;
@@ -413,6 +418,10 @@ footer .social-icon.facebook-icon a {
 	background: url("images/spicer-moore.png") no-repeat center 50px #D6D0C2;
 }
 
+.work #main {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
 .work .teaser h3, .single .teaser h3, .tags .teaser h3 {
 	position: absolute;
 	top: 0;
@@ -429,6 +438,9 @@ footer .social-icon.facebook-icon a {
 }
 .single .client {
 	font-weight: 600;
+}
+.single #vid_embed iframe {
+	width: 100%;
 }
 
 .contact .page-title {

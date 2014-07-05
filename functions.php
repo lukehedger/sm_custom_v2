@@ -5,7 +5,7 @@ if (function_exists('add_theme_support')) {
     add_theme_support('post-thumbnails');
     add_image_size('featured', 1180, 483, true);
     add_image_size('category', 80, 80, true);
-    add_image_size('custom', 372, 174, true);
+    add_image_size('custom', 377, 214, true);
 }
 
 // Set compression quality for generated images to 100%
