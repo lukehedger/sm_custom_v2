@@ -353,7 +353,7 @@ nav ul li:hover .sub-menu {
 }
 /* Flickr widget */
 .slickr-flickr-gallery {
-	margin: 20px auto !important;
+	margin: 40px auto 20px auto !important;
 	padding: 0 !important;
 }	
 .slickr-flickr-gallery ul li {
@@ -366,7 +366,7 @@ nav ul li:hover .sub-menu {
     padding: 0 25px 5px 0 !important;
 }
 .slickr-flickr-gallery ul img:last-of-type {
-	padding-right: 0;
+	padding-right: 0 !important;
 }
 .slickr-flickr-gallery ul a:hover img {
     background-color: transparent !important;
