@@ -1,6 +1,9 @@
 body {
 	font: normal 1em/1.4 'HelveticaNeue-Roman',Helvetica,Arial,sans-serif;
 	color: #595241;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
