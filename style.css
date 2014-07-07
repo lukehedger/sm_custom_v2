@@ -64,9 +64,12 @@ nav {
 }
 
 .menu-item {
-	margin-right: 30px;
+	margin-right: 40px;
 	float: left;
 	position: relative;
+}
+.menu-item:last-of-type {
+	margin-right: 0;
 }
 
 nav a {
@@ -133,10 +136,10 @@ nav ul li:hover .sub-menu {
 	z-index: 80;
 }
 .slide_nav.slide_nav_left {
-	left: 0;
+	left: 15px;
 }
 .slide_nav.slide_nav_right {
-	right: 0;
+	right: 15px;
 }
 .slide_panel h3 {
 	padding: 10px 40px 10px 30px;
@@ -153,12 +156,14 @@ nav ul li:hover .sub-menu {
 }
 
 #tagline {
+	padding-top: 5px;
 	font-size: 30px;
 	text-align: center;
 	color: #828175;
 }
 
 #thumbs {
+	padding-top: 40px;
 	font-size: 24px;
 	color: white;
 }
@@ -416,7 +421,7 @@ footer .social-icon.facebook-icon a {
 }
 
 .about .inner.box, .services .inner.box {
-	background: url("images/spicer-moore.png") no-repeat center 50px #D6D0C2;
+	background: url("images/spicer-moore.png") no-repeat center 50px #d5cfc0;
 }
 
 .work #main {

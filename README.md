@@ -18,7 +18,7 @@ Local Wordpress development
 - [x] Flickr thumbs need more spacing between each one, 25px *change css*
 
 ### About Us, Services, Contact Us:
-- [ ] In the design we had a block of colour behind the copy and icons, seem to be missing this? *probably still there but need to check colours in psd*
+- [x] In the design we had a block of colour behind the copy and icons, seem to be missing this? *probably still there but need to check colours in psd*
 
 ### Project pg:
 - [x] Video needs to be full width 1180px *can this be forced or set per post?*
