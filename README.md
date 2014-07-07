@@ -24,7 +24,7 @@ Local Wordpress development
 - [x] Video needs to be full width 1180px *can this be forced or set per post?*
 
 ### General:
-- [ ] Add SVGs *note: some of these will be directly in sidebar widget*
+- [x] Add SVGs *note: some of these will be directly in sidebar widget*
 
 ## Staging
 
