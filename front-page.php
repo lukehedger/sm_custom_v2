@@ -32,7 +32,7 @@
 								?>
 								<div class="slide_panel">
 									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('featured', array('alt'=>'Project Preview','title'=>'View Now')); ?></a>
-									<h3><a href="<?php the_permalink(); ?>" title="View Now" class="teaser_title"><?php the_title(); ?></a></h3>
+									<!-- <h3><a href="<?php the_permalink(); ?>" title="View Now" class="teaser_title"><?php the_title(); ?></a></h3> -->
 								</div>
 					
 								<?php endwhile; ?>	
