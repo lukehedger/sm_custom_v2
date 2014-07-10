@@ -459,7 +459,7 @@ footer .social-icon.facebook-icon a {
 	width: 100%;
 	padding: 20px 120px 60px;
 	float: left;
-	background-color: #D6D0C2;
+	background-color: #e0dbd0;
 }
 
 .contact ul, .contact li {
@@ -472,8 +472,14 @@ footer .social-icon.facebook-icon a {
 	
 }
 
-/* =Mobile Safari ( iPad, iPhone and iPod Touch )
+/* MOBILE
 -------------------------------------------------------------- */
+
+@media only screen and (max-width: 400px) {
+	.row {
+		width: 1230px;
+	}
+}
 
 body {
 	-webkit-text-size-adjust: 100%;
