@@ -475,9 +475,10 @@ footer .social-icon.facebook-icon a {
 /* MOBILE
 -------------------------------------------------------------- */
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 1179px) {
 	.row {
 		width: 1230px;
+		margin: 0 auto;
 	}
 }
 
