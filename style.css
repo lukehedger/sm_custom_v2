@@ -442,20 +442,20 @@ footer .social-icon.facebook-icon a {
 	font-weight: 300;
 }
 
+.single .inner.video {
+	width: 718px !important;
+}
 .single h2 {
 	margin-bottom: 0;
 }
 .single .client {
 	font-weight: 600;
 }
-.single #vid_embed iframe {
-	width: 100%;
-}
 
 .contact .page-title {
 	padding: 5px;
 }
-.contact .contact-details, .single .single-details {
+.contact .contact-details {
 	width: 100%;
 	padding: 20px 120px 60px;
 	float: left;

@@ -9,7 +9,7 @@
 
 			<div class="row">
 				<div class="column twelve">
-					<div class="inner">
+					<div class="inner video">
 
 						<?php while ( have_posts() ) : the_post(); ?>
 						
