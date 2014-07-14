@@ -442,14 +442,26 @@ footer .social-icon.facebook-icon a {
 	font-weight: 300;
 }
 
-.single .inner.video {
-	width: 718px !important;
-}
 .single h2 {
 	margin-bottom: 0;
 }
 .single .client {
 	font-weight: 600;
+}
+.single .inner.video {
+	/* VIDEO PLAYER WIDTH - just change this value to resize the video player, height will be calculated automatically */
+	width: 718px !important;
+}
+.single .inner.video #vid_embed {
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	position:relative;
+}
+.single .inner.video #vid_embed iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
 }
 
 .contact .page-title {
