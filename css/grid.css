@@ -11,7 +11,7 @@
 	border-bottom: 2px solid white;
 }
 
-.row:first-of-type, footer {
+.row:first-of-type:not(header), footer {
 	padding: 0 20px;
 	border: 0;
 }

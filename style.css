@@ -43,6 +43,10 @@ img {
 /* SECTIONS
 -------------------------------------------------------------- */
 
+header {
+	margin-bottom: 20px;
+	padding: 0 !important;
+}
 header .inner {
 	height: 77px;
 	margin: 20px auto;
