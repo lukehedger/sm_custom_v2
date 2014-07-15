@@ -454,7 +454,7 @@ footer .social-icon.facebook-icon a {
 }
 .single .inner.video {
 	/* VIDEO PLAYER WIDTH - just change this value to resize the video player, height will be calculated automatically */
-	width: 718px !important;
+	width: 1080px !important;
 }
 .single .inner.video #vid_embed {
 	width: 100%;
