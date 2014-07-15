@@ -19,7 +19,7 @@ get_header(); ?>
 				<div class="column twelve">
 					<div class="inner">
 
-						<h2 class="tag-name">Tag: <?php single_tag_title(); ?></h2>
+						<h2 class="tag-name"><?php single_tag_title(); ?></h2>
 
 						<div class="teasers">
 						
