@@ -9,11 +9,9 @@
 
 			<div class="row" id="main">
 				<div class="column twelve">
-					<div class="inner box">
+					<div class="inner">
 			
-						<h2 class="page-title"><?php the_title(); ?></h2>
-						
-						<!-- <div id="vid_embed"><?php echo get_post_meta($post->ID, '_videoembed_manual', true); ?></div> -->
+						<!-- <h2 class="page-title"><?php the_title(); ?></h2> -->
 			
 						<?php while ( have_posts() ) : the_post(); ?>
 

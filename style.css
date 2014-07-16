@@ -431,6 +431,11 @@ footer .social-icon.facebook-icon a {
 	background: url("images/spicer-moore.png") no-repeat center 50px #e0dbd0;
 }
 
+.services p {
+	/* to center the services page image */
+	text-align: center;
+}
+
 .work #main {
 	padding-bottom: 0;
 	border-bottom: 0;
